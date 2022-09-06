@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fighting Game</title>
+  </head>
+  <body>
+    <!-- container div -->
+    <div class="main_container">
+      <!-- sub container div -->
+      <div class="sub_container">
+        <!-- Player HP bar -->
+        <div class="player_hp_container">
+          <div class="player_hp_bar"></div>
+          <div id="playerHealth" class="player_hp_bar_reduction"></div>
+        </div>
+        <!-- Battle timer -->
+        <div id="timer" class="timer">10</div>
+        <!-- Enemy HP bar -->
+        <div class="enemy_hp_container">
+          <div class="enemy_hp_bar"></div>
+          <div id="enemyHealth" class="enemy_hp_bar_reduction"></div>
+        </div>
+      </div>
+      <div id="battle_results" class="battle_results">Tie</div>
+      <canvas></canvas>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
